@@ -9,16 +9,23 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'Project Dashboard';
-  summary = 'A focused view of delivery health, upcoming milestones, and team priorities.';
+  title = 'Prince Kumar';
+  role = 'Azure Infrastructure Administrator';
+  summary = 'Cloud operations professional with expertise in Azure, infrastructure automation, incident response, and secure platform support.';
+  profileImage = 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80';
   metrics = [
-    { label: 'Sprint progress', value: '78%', detail: 'Ahead of plan' },
-    { label: 'Open risks', value: '3', detail: 'Two mitigations in progress' },
-    { label: 'Release readiness', value: '92%', detail: 'Strong confidence' }
+    { label: 'Years of Experience', value: '5+', detail: 'Infrastructure delivery' },
+    { label: 'Cloud Focus', value: 'Azure', detail: 'Hybrid and modern workloads' },
+    { label: 'Availability', value: '99.9%', detail: 'Service reliability' }
   ];
   priorities = [
-    'Launch planning',
-    'Customer onboarding flow',
-    'Performance tuning'
+    'Azure VM and network administration',
+    'Automation with scripts and IaC',
+    'Security, monitoring, and incident handling'
+  ];
+  highlights = [
+    'Designed resilient Azure infrastructure solutions',
+    'Improved deployment reliability and operational visibility',
+    'Collaborated with teams on secure, scalable environments'
   ];
 }

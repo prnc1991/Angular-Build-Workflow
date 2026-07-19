@@ -1,14 +1,21 @@
 <div class="dashboard-shell">
   <header class="hero-card">
-    <div>
-      <p class="eyebrow">Operations overview</p>
-      <h1>{{ title }}</h1>
-      <p class="summary">{{ summary }}</p>
+    <div class="profile-block">
+      <img [src]="profileImage" alt="Profile portrait of Prince Kumar" class="profile-image" />
+      <div>
+        <p class="eyebrow">Professional profile</p>
+        <h1>{{ title }}</h1>
+        <p class="role">{{ role }}</p>
+        <p class="summary">{{ summary }}</p>
+      </div>
     </div>
-    <div class="status-pill">Healthy delivery</div>
+    <div class="hero-actions">
+      <div class="status-pill">Available for opportunities</div>
+      <button class="action-btn">Allow</button>
+    </div>
   </header>
 
-  <section class="metrics-grid" aria-label="Project metrics">
+  <section class="metrics-grid" aria-label="Career highlights">
     <article class="metric-card" *ngFor="let metric of metrics">
       <p class="metric-label">{{ metric.label }}</p>
       <h2>{{ metric.value }}</h2>
@@ -18,15 +25,25 @@
 
   <section class="content-grid">
     <article class="panel">
-      <h3>Top priorities</h3>
+      <h3>Core strengths</h3>
       <ul>
         <li *ngFor="let item of priorities">{{ item }}</li>
       </ul>
     </article>
 
     <article class="panel">
-      <h3>Next update</h3>
-      <p>Review the release checklist, confirm the onboarding path, and share the status report with stakeholders.</p>
+      <h3>Key highlights</h3>
+      <ul>
+        <li *ngFor="let item of highlights">{{ item }}</li>
+      </ul>
     </article>
+  </section>
+
+  <section class="approval-card">
+    <div>
+      <h3>Ready to collaborate</h3>
+      <p>Open to roles focused on Azure infrastructure, cloud operations, and reliable platform support.</p>
+    </div>
+    <button class="action-btn">Allow</button>
   </section>
 </div>
