@@ -14,16 +14,18 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'test-angular-app' title`, () => {
+  it(`should have the 'Project Dashboard' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('test-angular-app');
+    expect(app.title).toEqual('Project Dashboard');
   });
 
-  it('should render title', () => {
+  it('should render dashboard summary and priorities', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('test-angular-app');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Project Dashboard');
+    expect(compiled.querySelectorAll('.metric-card').length).toBeGreaterThanOrEqual(3);
+    expect(compiled.textContent).toContain('Launch planning');
   });
 });

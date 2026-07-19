@@ -1,0 +1,89 @@
+.dashboard-shell {
+  font-family: Arial, sans-serif;
+  padding: 32px;
+  background: linear-gradient(135deg, #f4f7ff 0%, #eef4ff 100%);
+  min-height: 100vh;
+  color: #14213d;
+}
+
+.hero-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  border-radius: 20px;
+  padding: 24px 28px;
+  box-shadow: 0 10px 30px rgba(20, 33, 61, 0.08);
+  margin-bottom: 24px;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.8rem;
+  color: #4f6ef7;
+  font-weight: 700;
+}
+
+.summary {
+  margin: 8px 0 0;
+  color: #5a678c;
+  max-width: 640px;
+}
+
+.status-pill {
+  background: #e8f8ee;
+  color: #1f7a3f;
+  padding: 10px 14px;
+  border-radius: 999px;
+  font-weight: 700;
+}
+
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.metric-card {
+  background: white;
+  border-radius: 16px;
+  padding: 18px;
+  box-shadow: 0 8px 24px rgba(20, 33, 61, 0.06);
+}
+
+.metric-label {
+  margin: 0;
+  color: #6b7490;
+  font-size: 0.9rem;
+}
+
+.metric-card h2 {
+  margin: 8px 0 4px;
+  font-size: 1.6rem;
+}
+
+.metric-detail {
+  margin: 0;
+  color: #5a678c;
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.panel {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 8px 24px rgba(20, 33, 61, 0.06);
+}
+
+.panel ul {
+  padding-left: 18px;
+  color: #32415f;
+}

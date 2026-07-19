@@ -1,5 +1,32 @@
-<div style="font-family: Arial, sans-serif; text-align: center; padding: 60px;">
-  <h1>{{ title }} 🚀</h1>
-  <p>Angular app running successfully.</p>
-  <p>Built for GitHub Actions CI/CD testing.</p>
+<div class="dashboard-shell">
+  <header class="hero-card">
+    <div>
+      <p class="eyebrow">Operations overview</p>
+      <h1>{{ title }}</h1>
+      <p class="summary">{{ summary }}</p>
+    </div>
+    <div class="status-pill">Healthy delivery</div>
+  </header>
+
+  <section class="metrics-grid" aria-label="Project metrics">
+    <article class="metric-card" *ngFor="let metric of metrics">
+      <p class="metric-label">{{ metric.label }}</p>
+      <h2>{{ metric.value }}</h2>
+      <p class="metric-detail">{{ metric.detail }}</p>
+    </article>
+  </section>
+
+  <section class="content-grid">
+    <article class="panel">
+      <h3>Top priorities</h3>
+      <ul>
+        <li *ngFor="let item of priorities">{{ item }}</li>
+      </ul>
+    </article>
+
+    <article class="panel">
+      <h3>Next update</h3>
+      <p>Review the release checklist, confirm the onboarding path, and share the status report with stakeholders.</p>
+    </article>
+  </section>
 </div>
