@@ -12,7 +12,7 @@ export class AppComponent {
   title = 'Prince Kumar';
   role = 'Azure Infrastructure Administrator';
   summary = 'Cloud operations professional with expertise in Azure, infrastructure automation, incident response, and secure platform support.';
-  profileImage = 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80';
+  profileImage = 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=400&q=80';
   metrics = [
     { label: 'Years of Experience', value: '5+', detail: 'Infrastructure delivery' },
     { label: 'Cloud Focus', value: 'Azure', detail: 'Hybrid and modern workloads' },
